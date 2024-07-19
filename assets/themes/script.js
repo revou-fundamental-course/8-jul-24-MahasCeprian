@@ -1,8 +1,8 @@
 function kalkulasiberatbadan() {
-    // Get gender
+    // get jenis kelamin
     const gender = document.querySelector('input[name="gender"]:checked').value;
 
-    // Get weight, height, and age
+    // Get berat, tinggi, dan umur
     const weight = parseFloat(document.getElementById('input-berat-badan').value);
     const height = parseFloat(document.getElementById('input-tinggi-badan').value);
     const age = parseFloat(document.getElementById('input-usia').value);
@@ -13,11 +13,11 @@ function kalkulasiberatbadan() {
         return;
     }
 
-    // Calculate BMI
+    // kalkulasi BMI
     const heightInMeters = height / 100;
     const bmi = weight / (heightInMeters * heightInMeters);
 
-    // Interpret BMI result
+    // hasil keseluruhan BMI
     let hasilkeseluruhan1;
     let hasilkeseluruhan;
     if (gender === 'laki') {
@@ -58,7 +58,7 @@ function kalkulasiberatbadan() {
         }
     }
 
-    // Display result with hasilkeseluruhan
+    // tampilan dari hasil keseluruhan
     const resultElement = document.getElementById('result');
     resultElement.innerHTML = `
         <p>${hasilkeseluruhan1}</p> <br>
@@ -66,6 +66,8 @@ function kalkulasiberatbadan() {
         <p>${hasilkeseluruhan}</p>
     `;
 }
+
+// Hasil sugesti (saran) yang harus dilakukan jika berat tidak ideal
 function showSuggestions(category) {
     const suggestionsElement = document.getElementById('suggestions');
     suggestionsElement.innerHTML = '';
@@ -82,17 +84,18 @@ function showSuggestions(category) {
     }
     }
 
+//reset Form
 function resetForm() {
-// Clear input fields
+// reset input berat, tinggi badan, dan usia
 document.getElementById('input-berat-badan').value = "";
 document.getElementById('input-tinggi-badan').value = "";
 document.getElementById('input-usia').value = "";
 
-// Clear gender selection
+// reset status kelamin
 document.getElementById('selection-pria').checked = true;
 document.getElementById('selection-wanita').checked = false;
 
-// Clear result
+// reset hasil keseluruhan
 document.getElementById('result').innerHTML = "<p>Berat Anda Belum diketahui</p> <h1>0</h1> <p>Kami menunggu anda input terlebih dahulu</p>";
 document.getElementById('suggestions').innerHTML = "";
 }
