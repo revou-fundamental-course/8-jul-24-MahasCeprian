@@ -13,30 +13,30 @@
     <meta property="og:type" content="Kalkulator BMI">
     <meta property="og:title" content="Kalkulator BMI">
     <meta property="og:description" content="Kalkulator BMI">
-    <meta property="og:image" content="revou-logo.jpg">
+    <meta property="og:image" content="assets/images/revou-logo.jpg">
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="revou-logo.jpg">
+    <meta name="twitter:card" content="assets/images/revou-logo.jpg">
     <meta property="twitter:domain" content="https://mahasceprian@gmail.com">
     <meta property="twitter:url" content="https://mahasceprian@gmail.com">
     <meta name="twitter:title" content="Kalkulator BMI">
     <meta name="twitter:description" content="Kalkulator BMI">
-    <meta name="twitter:image" content="revou-logo.jpg">
+    <meta name="twitter:image" content="assets/images/revou-logo.jpg">
 </head>
 <body>
-    <section class="section-left-revoU-mahas">
+    <section class="section-left-revoU-mahas"> <!-- form sebelah kiri / bagian atas (mobile) -->
         <header>
-            <h1>
+            <h1> <!-- Judul -->
                 Kalkulator BMI
             </h1>
-            <p>
+            <p> <!-- keterangan BMI -->
                 Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang
                 penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
                 Yuk, hitung sekarang di kalkulator BMI. 
             </p>
         </header>
-        <div class="container-form-revoU-mahas">
-                <div class="form-content-revou-mahas">
+        <div class="container-form-revoU-mahas">  <!-- Form BMI -->
+                <div class="form-content-revou-mahas"> <!-- pilihan jenis kelamin -->
                     <input type="radio" id="selection-pria" name="gender" value="laki" class="selection-pria" checked>
                     <label for="selection-pria">Pria</label>
                     
@@ -44,7 +44,7 @@
                     <label for="selection-Wanita">Wanita</label>
                 </div>
 
-                <div class="form-content-revou-mahas">
+                <div class="form-content-revou-mahas"> <!-- inputan berat badan -->
                     <label for="input-berat-badan">berat Badan (kg)</label>
                     <div class="container-input">
                         <div class="pencil-emoji">🖉</div>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="form-content-revou-mahas">
+                <div class="form-content-revou-mahas"> <!-- Inputan umur -->
                     <label for="input-usia">Usia (Tahun)</label>
                     <div class="container-input">
                         <div class="pencil-emoji">&#128393</div>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="form-content-revou-mahas">
+                <div class="form-content-revou-mahas"> <!-- Inputan tinggi badan -->
                     <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
                     <div class="container-input">
                         <div class="pencil-emoji">&#128393</div>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="form-content-revou-mahas">
+                <div class="form-content-revou-mahas"> <!-- tombol action untuk reset / melihat hasil kalkulasi BMI -->
                     <button class="submit-button" onclick="kalkulasiberatbadan()">Submit BMI</button>
                     <button class="reset-button" onclick="resetForm()">Reset</button>
                 </div> 
@@ -99,13 +99,13 @@
             </h1>
         </div>
         
-            <div id="result" class="hasil">
+            <div id="result" class="hasil"> <!-- Tampilan hasil dari kalkulasi BMI -->
                 <p>Berat Anda Belum diketahui</p>
                 <H1>0</H1>
                 <p>Kami menunggu anda input terlebih dahulu</p>
             </div>
             
-            <div id="suggestions" class="suggestions"></div>
+            <div id="suggestions" class="suggestions"></div> <!-- Saran yang dianjurkan jika berat badan tidak ideal -->
 
             <div class="konsuldanregis">
                 <Button><a href="https://play.google.com/store/apps/details?id=com.alodokter.android&shortlink=5c20772d&is_retargeting=true&pid=Website-Floating-Chat-Button&source_caller=ui&pli=1" target="window">Konsultasi Ahli Gizi Via Aplikasi</a></Button>
